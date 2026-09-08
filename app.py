@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-st.title("💰 AI Salary Prediction App")
+st.title(" AI Salary Prediction App")
 st.write("Predict salary based on experience and education level")
 
 # --- LOAD MODEL SAFELY ---
@@ -38,7 +38,7 @@ if st.button("Predict Salary"):
             [[experience, education_encoded[0]]]
         )
 
-        st.success(f"💵 Estimated Salary: {prediction[0]:,.0f} TZS")
+        st.success(f" Estimated Salary: {prediction[0]:,.0f} TZS")
 
     except Exception as e:
         st.error(f"Prediction error: {e}")
